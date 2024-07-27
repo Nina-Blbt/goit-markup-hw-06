@@ -1,4 +1,5 @@
-.hidden {
+.hidden,
+.contacts {
   display: none;
 }
 body {
@@ -339,8 +340,8 @@ button {
 }
 
 .social-btns-list {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .social-btns-link {
@@ -358,7 +359,7 @@ button {
 }
 
 .social-btns-link:hover {
-  background-color: #31d0aa;;
+  background-color: #31d0aa;
 }
 
 .social-btns-link:focus {
@@ -368,7 +369,6 @@ button {
 .social-btns-icon {
   fill: #f4f4fd;
 }
-
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -390,7 +390,86 @@ button {
 
   .mobile-menu-contacts-item {
   }
+}
 
-  
+/*HERO*/
+
+.slogan-section {
+  background-color: #2e2f42;
+  margin: 0 auto;
+  padding: 188px 0;
+  max-width: 1440px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title-text {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.title-button {
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-button:hover,
+.title-button:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .slogan-section {
+    background-color: #2e2f42;
+    margin: 0 auto;
+    padding: 188px 0;
+    max-width: 320;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .title-text {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 496px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
   }
 }
