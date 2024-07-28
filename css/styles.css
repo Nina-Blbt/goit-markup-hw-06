@@ -60,6 +60,7 @@ button {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
+  margin-bottom: 96px;
 }
 
 @media screen and (min-width: 768px) {
@@ -461,6 +462,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 96px;
   }
 
   .title-text {
@@ -474,6 +476,8 @@ button {
     margin-bottom: 72px;
   }
 }
+
+
 
 /*ABOUT US*/
 
@@ -612,10 +616,13 @@ button {
 /*TEAM*/
 
 .team-section {
+padding-top: 96px;
   background: #f4f4fd;
+  
 }
 
 .section-title {
+
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
@@ -637,6 +644,7 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   margin: 0 auto;
+  margin-bottom: 96px;
 }
 
 .team-content {
@@ -706,6 +714,7 @@ button {
 
   .team-item {
     margin: 0;
+    margin-bottom: 96px;
   }
 }
 
@@ -717,6 +726,7 @@ button {
 
 /*Portfolio*/
 .section-title {
+    
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -724,6 +734,7 @@ button {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
+ 
 }
 
 .portfolio-list {
@@ -744,6 +755,7 @@ button {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+
 }
 
 .portfolio-subtitle {
