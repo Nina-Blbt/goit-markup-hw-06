@@ -52,16 +52,16 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu-close">
+          <button type="button" class="mobile-menu-close" data-menu-close>
             <svg class="icon-close" width="8" height="8">
               <use href="./images/icons.svg#icon-close" />
             </svg>
@@ -69,7 +69,7 @@
           <nav class="mobile-menu-nav">
             <ul class="mobile-menu-list">
               <li class="mobile-menu-item">
-                <a class="mobile-menu-nav-link current" href="./index.html"
+                <a class="mobile-menu-nav-link is-active" href="./index.html"
                   >Studio
                 </a>
               </li>
@@ -138,14 +138,14 @@
     </header>
 
     <main>
-      <section class="slogan-section ">
+      <section class="slogan-section container-section">
         <div class="container container-slogan-section">
           <h1 class="title-text">Effective Solutions for Your Business</h1>
-          <button class="title-button" type="button">Order Service</button>
+          <button class="title-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section container-section">
         <div class="container">
           <h2 class="visually-hidden">ABOUT US</h2>
           <ul class="about-list">
@@ -201,7 +201,7 @@
         </div>
       </section>
 
-      <section class="section team-section">
+      <section class="section team-section container-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -368,7 +368,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section container-section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -561,9 +561,9 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close" />
           </svg>
@@ -647,13 +647,19 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
+              <span>
               I accept the terms and conditions of the
               <a href="" class="form-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="privacy-send-btn">Send</button>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>
