@@ -1,5 +1,7 @@
-.rent {
-  background-color: #040306;
+input::placeholder,
+textarea::placeholder {
+  color: rgba(251, 251, 251, 0.4);
+  display: block !important;
 }
 
 .container {
@@ -33,37 +35,6 @@
   flex: 0 1 auto;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding: 0 50px;
-    max-width: 704px;
-  }
-  .rent-content {
-    flex-direction: row-reverse;
-    gap: 100px;
-  }
-  .rent-title {
-    font-size: 48px;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1080px;
-  }
-
-  .rent-content {
-    flex-wrap: nowrap;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1340px;
-  }
-}
-
 .rent-title {
   font-weight: 500;
   font-size: 28px;
@@ -93,21 +64,10 @@
   border: 1px solid rgba(251, 251, 251, 0.5);
 }
 
-@media (min-width: 768px) {
-  .form-input {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    width: 472px;
-    height: 54px;
-  }
-}
-
 .form-comment {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
-  padding: 14px 261px 80px 18px;
-  margin-bottom: 40px;
+  padding: 14px 18px;
   width: 100%;
   cursor: text;
   resize: none;
@@ -118,26 +78,59 @@
 }
 
 @media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+
+  .rent-content {
+    flex-direction: row-reverse;
+    gap: 100px;
+    justify-content: flex-end;
+  }
+  .rent-title {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .send-btn {
+    margin-top: 32px;
+  }
+
   .form-comment {
-    margin-bottom: 50px;
-    padding: 18px 388px 18px 18px;
-    width: 472px;
-    height: 54px;
+    padding: 18px;
     box-sizing: border-box;
   }
-}
 
-@media (min-width: 768px) {
-  .rent-send-btn {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 110%;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
+  .form-input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    width: 472px;
+    height: 54px;
   }
 }
 
-@media (min-width: 768px) {
-  .rent-img {
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+
+  .rent-content {
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+
+  .rent-img img {
+    height: 100%;
+    width: auto;
+    transform: scale(1.25);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
   }
 }
